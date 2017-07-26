@@ -7,18 +7,37 @@ The following acoustic properties of each voice are measured and included within
 * Q75: third quantile (in kHz)
 * IQR: interquantile range (in kHz)
 * skew: skewness
-kurt: kurtosis
-sp.ent: spectral entropy
-sfm: spectral flatness
-mode: mode frequency
-centroid: frequency centroid (see specprop)
-peakf: peak frequency (frequency with highest energy)
-meanfun: average of fundamental frequency measured across acoustic signal
-minfun: minimum fundamental frequency measured across acoustic signal
-maxfun: maximum fundamental frequency measured across acoustic signal
-meandom: average of dominant frequency measured across acoustic signal
-mindom: minimum of dominant frequency measured across acoustic signal
-maxdom: maximum of dominant frequency measured across acoustic signal
-dfrange: range of dominant frequency measured across acoustic signal
-modindx: modulation index. Calculated as the accumulated absolute difference between adjacent measurements of fundamental frequencies divided by the frequency range
-label: male or female
+* kurt: kurtosis
+* sp.ent: spectral entropy
+* sfm: spectral flatness
+* mode: mode frequency
+* centroid: frequency centroid (see specprop)
+* peakf: peak frequency (frequency with highest energy)
+* meanfun: average of fundamental frequency measured across acoustic signal
+* minfun: minimum fundamental frequency measured across acoustic signal
+* maxfun: maximum fundamental frequency measured across acoustic signal
+* meandom: average of dominant frequency measured across acoustic signal
+* mindom: minimum of dominant frequency measured across acoustic signal
+* maxdom: maximum of dominant frequency measured across acoustic signal
+* dfrange: range of dominant frequency measured across acoustic signal
+* modindx: modulation index. Calculated as the accumulated absolute difference between adjacent measurements of fundamental frequencies divided by the frequency range
+* label: male or female
+
+
+## Accuracy (Kaggle) ##
+### Random Forest ###
+* 100% / 98%
+
+### SVM ###
+* 100% / 99%
+
+## Accuracy (This Implementation) ##
+### Random Forest ###
+* 0.970557308097
+* 1.0 after Cross Validation
+
+
+### SVM ###
+* 0.703470031546
+* 0.758207070707 after Cross Validation
+* 0.967072620659 after Parameter tuning using Grid Search
