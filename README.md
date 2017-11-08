@@ -34,10 +34,9 @@ The following acoustic properties of each voice are measured and included within
 ## Accuracy (This Implementation) ##
 ### Random Forest ###
 * 0.970557308097
-* 1.0 after Cross Validation
+
 
 
 ### SVM ###
 * 0.703470031546
-* 0.758207070707 after Cross Validation
 * 0.967072620659 after Parameter tuning using Grid Search
